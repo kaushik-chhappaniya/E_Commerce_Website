@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'store' #Django app
+    'store', #Django app
+    'cart', # Django App
 ]
 
 MIDDLEWARE = [
@@ -65,6 +66,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'store.views.categories',  # Categories 
+                'cart.context_processors.cart', # Context processor for cart. Session mgmt for entire project.
             ],
         },
     },

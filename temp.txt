@@ -1,0 +1,25 @@
+Added cart
+- urls
+- views
+- migration
+- models
+
+Added cart url to base.html
+render cart-summary html
+
+session creation
+cart creation
+
+add context processor for cart
+
+
+Test session cookis
+ python .\manage.py shell // already insalled session
+
+ TEST THE SESSION COOKIE
+ from django.contrib.sessions.models import Session
+ sessionK = Session.objects.get(pk='bipo39yckqhpbo0ooeeb9kfop6mr8o6v')
+ sessionK.get_decoded()
+
+
+ Add AJAX to add to cart

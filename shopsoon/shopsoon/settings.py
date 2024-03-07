@@ -40,6 +40,12 @@ INSTALLED_APPS = [
 
     'store', #Django app
     'cart', # Django App
+    'account', # Django App
+    'payment', # Django App
+    'mathfilters', # Django mathfilters
+    'crispy_forms', # Django Crispy Forms
+    
+    
 ]
 
 MIDDLEWARE = [

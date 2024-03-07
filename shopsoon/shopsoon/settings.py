@@ -38,7 +38,14 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'store' #Django app
+    'store', #Django app
+    'cart', # Django App
+    'account', # Django App
+    'payment', # Django App
+    'mathfilters', # Django mathfilters
+    'crispy_forms', # Django Crispy Forms
+    
+    
 ]
 
 MIDDLEWARE = [
@@ -64,6 +71,8 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'store.views.categories',  # Categories 
+                'cart.context_processors.cart', # Context processor for cart. Session mgmt for entire project.
             ],
         },
     },
